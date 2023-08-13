@@ -95,17 +95,17 @@
       <button value="4">4</button>
       <button value="5">5</button>
       <button value="6">6</button>
-      <button class="operator" value="*">X</button>
+      <button class="operator" value="*">x</button>
       <button value="1">1</button>
       <button value="2">2</button>
       <button value="3">3</button>
       <button class="operator" value="-">-</button>
       <button value="0">0</button>
       <button value=".">.</button>
-      <button class="calculate" id="calculate">=</button>
+      <button class="calculate" id="calculate" value = "=">=</button>
       <button class="operator" value="+">+</button>
-      <button class="delete" id="delete">DEL</button>
-      <button class="clear" id="clear">C</button>
+      <button class="delete" id="delete" value = "DEL">DEL</button>
+      <button class="clear" id="clear" value = "C">C</button>
 
     </div>
   </div>
@@ -124,7 +124,7 @@
       const buttons = document.querySelectorAll("button");
       buttons.forEach(button => {
         button.addEventListener("click", function () {
-          const value = button.textContent;
+          const value = button.value;
 
           // Handle the delete button
           if (value === "DEL") {
